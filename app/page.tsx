@@ -24,6 +24,24 @@ export const metadata: Metadata = {
     description:
       "Match with trusted local contractors for landscaping, artificial turf, pavers, and more.",
     type: "website",
+    url: "https://www.chandleryardpros.com",
+    siteName: "Chandler Yard Pros",
+    images: [
+      {
+        url: "https://www.chandleryardpros.com/images/CYPLOGO.png",
+        width: 1024,
+        height: 1024,
+        alt: "Chandler Yard Pros Logo",
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Professional Landscaping Services in Chandler, AZ",
+    description:
+      "Match with trusted local contractors for landscaping, artificial turf, pavers, and more.",
+    images: ["https://www.chandleryardpros.com/images/CYPLOGO.png"],
   },
 };
 

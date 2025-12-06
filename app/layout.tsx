@@ -20,22 +20,24 @@ export const metadata: Metadata = {
       "Connect with trusted local contractors for landscaping services in Chandler, Arizona.",
     type: "website",
     locale: "en_US",
+    url: "https://www.chandleryardpros.com",
+    siteName: "Chandler Yard Pros",
     images: [
       {
-        url: "/images/CYPLOGO.png",
-        width: 1200,
-        height: 630,
+        url: "https://www.chandleryardpros.com/images/CYPLOGO.png",
+        width: 1024,
+        height: 1024,
         alt: "Chandler Yard Pros Logo",
+        type: "image/png",
       },
     ],
-    siteName: "Chandler Yard Pros",
   },
   twitter: {
     card: "summary_large_image",
     title: "Chandler Yard Pros | Professional Landscaping Services",
     description:
       "Connect with trusted local contractors for landscaping services in Chandler, Arizona.",
-    images: ["/images/CYPLOGO.png"],
+    images: ["https://www.chandleryardpros.com/images/CYPLOGO.png"],
   },
 };
 

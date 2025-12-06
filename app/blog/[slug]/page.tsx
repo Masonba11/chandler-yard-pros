@@ -38,6 +38,22 @@ export async function generateMetadata({
   return {
     title: `${post.title} | Chandler Yard Pros Blog`,
     description: post.description,
+    openGraph: {
+      title: `${post.title} | Chandler Yard Pros Blog`,
+      description: post.description,
+      images: [
+        {
+          url: "https://www.chandleryardpros.com/images/CYPLOGO.png",
+          width: 1024,
+          height: 1024,
+          alt: "Chandler Yard Pros Logo",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      images: ["https://www.chandleryardpros.com/images/CYPLOGO.png"],
+    },
   };
 }
 
