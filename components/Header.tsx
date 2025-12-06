@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Dropdown from "./Dropdown";
@@ -5,6 +8,8 @@ import { services } from "@/lib/services";
 import "./Header.css";
 
 export default function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const serviceItems = services.map((service) => ({
     name: service.name,
     href: `/services/${service.slug}`,
@@ -18,11 +23,19 @@ export default function Header() {
     { name: "San Tan Valley", href: "/service-areas/san-tan-valley" },
   ];
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="container">
         <nav className="navbar">
-          <Link href="/" className="logo">
+          <Link href="/" className="logo" onClick={closeMobileMenu}>
             <Image
               src="/images/CYPLOGO.png"
               alt="Chandler Yard Pros"
@@ -32,9 +45,22 @@ export default function Header() {
               priority
             />
           </Link>
-          <ul className="nav-menu">
+          <button
+            className="mobile-menu-toggle"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle menu"
+          >
+            <span className={`hamburger ${isMobileMenuOpen ? "open" : ""}`}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+          <ul className={`nav-menu ${isMobileMenuOpen ? "open" : ""}`}>
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/" onClick={closeMobileMenu}>
+                Home
+              </Link>
             </li>
             <li>
               <Dropdown title="Services" items={serviceItems} />
@@ -43,10 +69,14 @@ export default function Header() {
               <Dropdown title="Service Areas" items={serviceAreaItems} />
             </li>
             <li>
-              <Link href="/blog">Blog</Link>
+              <Link href="/blog" onClick={closeMobileMenu}>
+                Blog
+              </Link>
             </li>
             <li>
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact" onClick={closeMobileMenu}>
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>
