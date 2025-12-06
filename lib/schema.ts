@@ -19,12 +19,13 @@ export function generateBreadcrumbSchema(items: BreadcrumbItem[]) {
 export function generateLandscapingCompanySchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "LandscapingCompany",
+    "@type": "HomeAndConstructionBusiness",
     name: "Chandler Yard Pros",
     description:
-      "Professional landscaping and yard maintenance services in Chandler, AZ.",
+      "Professional landscaping and yard maintenance services in Chandler, Arizona. Connect with trusted local contractors for turf, pavers, irrigation, lawn care, tree trimming, and more.",
     url: "https://www.chandleryardpros.com",
     telephone: "480-987-6110",
+    priceRange: "$$",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Chandler",
@@ -36,13 +37,8 @@ export function generateLandscapingCompanySchema() {
       latitude: 33.3062,
       longitude: -111.8413,
     },
-    areaServed: [
-      "Chandler AZ",
-      "Mesa AZ",
-      "Gilbert AZ",
-      "Queen Creek AZ",
-      "San Tan Valley AZ",
-    ],
+    openingHours: "Mo-Su 08:00-18:00",
+    areaServed: ["Chandler AZ"],
     sameAs: [],
   };
 }
@@ -52,15 +48,14 @@ export function generateServiceSchema(serviceName: string) {
     "@context": "https://schema.org",
     "@type": "Service",
     serviceType: `${serviceName} Chandler AZ`,
-    provider: {
-      "@type": "LandscapingCompany",
-      name: "Chandler Yard Pros",
-      areaServed: "Chandler AZ",
+    areaServed: {
+      "@type": "City",
+      name: "Chandler",
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 33.3062,
-      longitude: -111.8413,
+    provider: {
+      "@type": "HomeAndConstructionBusiness",
+      name: "Chandler Yard Pros",
+      url: "https://www.chandleryardpros.com",
     },
   };
 }
