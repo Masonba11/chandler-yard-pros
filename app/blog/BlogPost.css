@@ -162,17 +162,18 @@
   }
 
   .blog-post-page .page-header-overlay {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
 
   .blog-post-page .page-header-overlay .container {
-    padding: 1rem;
+    padding: 0.75rem;
   }
 
   .blog-post-page .page-header h1 {
-    font-size: 1.25rem !important;
+    font-size: 1rem !important;
     line-height: 1.2;
-    padding: 0 0.75rem;
+    padding: 0 0.5rem;
+    margin-bottom: 0.75rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
   }

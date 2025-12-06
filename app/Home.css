@@ -248,7 +248,11 @@
   right: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
   animation: pulse 4s ease-in-out infinite;
 }
 
@@ -328,33 +332,39 @@
   }
 
   .hero-overlay {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
 
   .hero-overlay .container {
-    padding: 1rem;
+    padding: 0.75rem;
   }
 
   .hero-overlay h1 {
-    font-size: 1.25rem !important;
+    font-size: 1rem !important;
     line-height: 1.2;
-    padding: 0 0.75rem;
+    padding: 0 0.5rem;
+    margin-bottom: 0.75rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
 
   .hero-subtitle {
-    font-size: 1rem;
-    padding: 0 1rem;
+    font-size: 0.875rem;
+    padding: 0 0.5rem;
+    line-height: 1.4;
   }
 
   .hero-cta {
     flex-direction: column;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    gap: 0.75rem;
   }
 
   .hero-cta .btn {
     width: 100%;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.9375rem;
   }
 
   .hero-videos {
