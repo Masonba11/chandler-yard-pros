@@ -1,0 +1,269 @@
+.service-page .page-header {
+  position: relative;
+  min-height: 600px;
+  width: 100%;
+  overflow: hidden;
+  color: var(--white);
+  text-align: center;
+  margin-top: 0;
+}
+
+.service-page .page-header-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  z-index: 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.service-page .page-header-media video {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.service-page .page-header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+.service-page .page-header-overlay .container {
+  width: 100%;
+  padding: 2rem 1.5rem;
+}
+
+.service-page .page-header h1 {
+  color: var(--white);
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.service-page .page-subtitle {
+  color: var(--light-gray);
+  font-size: 1.125rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.service-page .hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.service-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-paragraph {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: var(--dark-gray);
+}
+
+.service-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-green);
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-content h2:first-of-type {
+  margin-top: 0;
+}
+
+.benefits-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: var(--light-gray);
+  border-radius: 8px;
+}
+
+.benefits-section h2 {
+  color: var(--primary-green);
+  margin-bottom: 1.5rem;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  position: relative;
+  color: var(--dark-gray);
+  font-size: 1.0625rem;
+}
+
+.benefits-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.how-it-works-section {
+  margin: 3rem 0;
+}
+
+.how-it-works-section h2 {
+  text-align: center;
+  color: var(--dark-gray);
+  margin-bottom: 2rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.step {
+  text-align: center;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-green);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 auto 1.5rem;
+}
+
+.step h3 {
+  color: var(--dark-gray);
+  margin-bottom: 1rem;
+}
+
+.faq-section {
+  margin: 3rem 0;
+}
+
+.faq-section h2 {
+  text-align: center;
+  color: var(--dark-gray);
+  margin-bottom: 2rem;
+}
+
+.faq-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.faq-item h3 {
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+}
+
+.related-services {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-top: 2px solid var(--light-gray);
+}
+
+.related-services h2 {
+  text-align: center;
+  color: var(--dark-gray);
+  margin-bottom: 2rem;
+}
+
+.related-service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.related-service-card h4 {
+  color: var(--primary-green);
+  margin-bottom: 0.75rem;
+}
+
+.related-service-card p {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  font-size: 0.9375rem;
+}
+
+.cta-section {
+  margin: 3rem 0;
+  padding: 3rem;
+  background: linear-gradient(
+    135deg,
+    var(--primary-green) 0%,
+    var(--dark-green) 100%
+  );
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cta-content h2 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  color: var(--light-gray);
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.cta-content .btn {
+  background-color: var(--white);
+  color: var(--primary-green);
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+}
+
+.cta-content .btn:hover {
+  background-color: var(--light-gray);
+}
+
+@media (max-width: 768px) {
+  .service-page .page-header {
+    min-height: 300px;
+  }
+
+  .page-header-overlay {
+    padding: 3rem 0;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}

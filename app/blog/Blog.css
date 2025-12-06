@@ -1,0 +1,136 @@
+.blog-page .page-header {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: var(--white);
+  text-align: center;
+  margin-top: 0;
+}
+
+.blog-page .hero-videos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 1;
+}
+
+.blog-page .hero-video-container {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.blog-page .hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-page .page-header-overlay {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 4rem 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+.blog-page .page-header h1 {
+  color: var(--white);
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.blog-page .page-subtitle {
+  color: var(--light-gray);
+  font-size: 1.125rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.blog-page .hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.blog-posts-grid {
+  margin-top: 2rem;
+}
+
+.blog-post-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.post-date {
+  color: var(--gray);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.blog-post-card h2 {
+  margin-bottom: 1rem;
+}
+
+.blog-post-card h2 a {
+  color: var(--dark-gray);
+  transition: color 0.3s ease;
+}
+
+.blog-post-card h2 a:hover {
+  color: var(--primary-green);
+}
+
+.post-description {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.read-more {
+  color: var(--primary-green);
+  font-weight: 600;
+  display: inline-block;
+  margin-top: auto;
+}
+
+.read-more:hover {
+  color: var(--dark-green);
+}
+
+@media (max-width: 768px) {
+  .blog-page .page-header {
+    min-height: 300px;
+  }
+
+  .blog-page .page-header-overlay {
+    padding: 3rem 0;
+  }
+
+  .blog-page .hero-videos {
+    flex-direction: column;
+  }
+
+  .blog-page .hero-video-container {
+    height: 50%;
+  }
+}
