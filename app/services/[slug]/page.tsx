@@ -41,17 +41,23 @@ export async function generateMetadata({
     openGraph: {
       title: `${content.name} Chandler AZ | Chandler Yard Pros`,
       description: content.description,
+      type: "website",
+      url: `https://www.chandleryardpros.com/services/${params.slug}`,
+      siteName: "Chandler Yard Pros",
       images: [
         {
           url: "https://www.chandleryardpros.com/images/CYPLOGO.png",
-          width: 1024,
-          height: 1024,
+          width: 1200,
+          height: 630,
           alt: "Chandler Yard Pros Logo",
+          type: "image/png",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
+      title: `${content.name} Chandler AZ | Chandler Yard Pros`,
+      description: content.description,
       images: ["https://www.chandleryardpros.com/images/CYPLOGO.png"],
     },
   };

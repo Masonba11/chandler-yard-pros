@@ -12,6 +12,30 @@ export const metadata: Metadata = {
     "Get in touch with Chandler Yard Pros to connect with trusted landscaping contractors in Chandler, Arizona. Tell us about your project and we'll match you with qualified professionals.",
   keywords:
     "contact chandler yard pros, landscaping contractor chandler, get quote chandler",
+  openGraph: {
+    title: "Contact Us | Chandler Yard Pros",
+    description:
+      "Get in touch with Chandler Yard Pros to connect with trusted landscaping contractors in Chandler, Arizona.",
+    type: "website",
+    url: "https://www.chandleryardpros.com/contact",
+    siteName: "Chandler Yard Pros",
+    images: [
+      {
+        url: "https://www.chandleryardpros.com/images/CYPLOGO.png",
+        width: 1200,
+        height: 630,
+        alt: "Chandler Yard Pros Logo",
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | Chandler Yard Pros",
+    description:
+      "Get in touch with Chandler Yard Pros to connect with trusted landscaping contractors in Chandler, Arizona.",
+    images: ["https://www.chandleryardpros.com/images/CYPLOGO.png"],
+  },
 };
 
 export default function ContactPage() {

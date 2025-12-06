@@ -13,6 +13,30 @@ export const metadata: Metadata = {
     "Read tips, guides, and insights about landscaping in Chandler, Arizona. Learn about best practices, services, and maintaining beautiful outdoor spaces.",
   keywords:
     "landscaping blog chandler, chandler landscaping tips, arizona landscaping advice",
+  openGraph: {
+    title: "Landscaping Blog | Chandler Yard Pros",
+    description:
+      "Read tips, guides, and insights about landscaping in Chandler, Arizona. Learn about best practices, services, and maintaining beautiful outdoor spaces.",
+    type: "website",
+    url: "https://www.chandleryardpros.com/blog",
+    siteName: "Chandler Yard Pros",
+    images: [
+      {
+        url: "https://www.chandleryardpros.com/images/CYPLOGO.png",
+        width: 1200,
+        height: 630,
+        alt: "Chandler Yard Pros Logo",
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Landscaping Blog | Chandler Yard Pros",
+    description:
+      "Read tips, guides, and insights about landscaping in Chandler, Arizona.",
+    images: ["https://www.chandleryardpros.com/images/CYPLOGO.png"],
+  },
 };
 
 export default function BlogPage() {

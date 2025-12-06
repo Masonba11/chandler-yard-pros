@@ -13,6 +13,30 @@ export const metadata: Metadata = {
     "Chandler Yard Pros connects homeowners with trusted landscaping contractors throughout the Greater Phoenix area, including Chandler, Mesa, Gilbert, Queen Creek, and San Tan Valley.",
   keywords:
     "chandler landscaping, mesa landscaping, gilbert landscaping, queen creek landscaping, san tan valley landscaping",
+  openGraph: {
+    title: "Service Areas | Chandler Yard Pros",
+    description:
+      "Chandler Yard Pros connects homeowners with trusted landscaping contractors throughout the Greater Phoenix area.",
+    type: "website",
+    url: "https://www.chandleryardpros.com/service-areas",
+    siteName: "Chandler Yard Pros",
+    images: [
+      {
+        url: "https://www.chandleryardpros.com/images/CYPLOGO.png",
+        width: 1200,
+        height: 630,
+        alt: "Chandler Yard Pros Logo",
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Service Areas | Chandler Yard Pros",
+    description:
+      "Chandler Yard Pros connects homeowners with trusted landscaping contractors throughout the Greater Phoenix area.",
+    images: ["https://www.chandleryardpros.com/images/CYPLOGO.png"],
+  },
 };
 
 export default function ServiceAreasPage() {

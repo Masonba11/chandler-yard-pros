@@ -15,6 +15,30 @@ export const metadata: Metadata = {
     "Explore all our landscaping services in Chandler, Arizona. From pavers and artificial turf to lawn care and tree trimming, we connect you with trusted local contractors.",
   keywords:
     "landscaping services chandler, chandler yard services, lawn care chandler, landscape design chandler",
+  openGraph: {
+    title: "Landscaping Services in Chandler, AZ | Chandler Yard Pros",
+    description:
+      "Explore all our landscaping services in Chandler, Arizona. From pavers and artificial turf to lawn care and tree trimming.",
+    type: "website",
+    url: "https://www.chandleryardpros.com/services",
+    siteName: "Chandler Yard Pros",
+    images: [
+      {
+        url: "https://www.chandleryardpros.com/images/CYPLOGO.png",
+        width: 1200,
+        height: 630,
+        alt: "Chandler Yard Pros Logo",
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Landscaping Services in Chandler, AZ | Chandler Yard Pros",
+    description:
+      "Explore all our landscaping services in Chandler, Arizona. From pavers and artificial turf to lawn care and tree trimming.",
+    images: ["https://www.chandleryardpros.com/images/CYPLOGO.png"],
+  },
 };
 
 export default function ServicesPage() {

@@ -48,17 +48,23 @@ export async function generateMetadata({
     openGraph: {
       title: `Landscaping Services in ${city.displayName}, AZ | Chandler Yard Pros`,
       description: `Chandler Yard Pros connects homeowners with trusted landscaping contractors in ${city.displayName}, Arizona.`,
+      type: "website",
+      url: `https://www.chandleryardpros.com/service-areas/${params.city}`,
+      siteName: "Chandler Yard Pros",
       images: [
         {
           url: "https://www.chandleryardpros.com/images/CYPLOGO.png",
-          width: 1024,
-          height: 1024,
+          width: 1200,
+          height: 630,
           alt: "Chandler Yard Pros Logo",
+          type: "image/png",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
+      title: `Landscaping Services in ${city.displayName}, AZ | Chandler Yard Pros`,
+      description: `Chandler Yard Pros connects homeowners with trusted landscaping contractors in ${city.displayName}, Arizona.`,
       images: ["https://www.chandleryardpros.com/images/CYPLOGO.png"],
     },
   };
