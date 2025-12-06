@@ -12,6 +12,30 @@ export const metadata: Metadata = {
     index: false,
     follow: false,
   },
+  openGraph: {
+    title: "Thank You | Chandler Yard Pros",
+    description:
+      "Thank you for contacting Chandler Yard Pros. We'll connect you with a trusted contractor soon.",
+    type: "website",
+    url: "https://www.chandleryardpros.com/thank-you",
+    siteName: "Chandler Yard Pros",
+    images: [
+      {
+        url: "https://www.chandleryardpros.com/images/CYPLOGO.png",
+        width: 1200,
+        height: 630,
+        alt: "Chandler Yard Pros Logo",
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Thank You | Chandler Yard Pros",
+    description:
+      "Thank you for contacting Chandler Yard Pros. We'll connect you with a trusted contractor soon.",
+    images: ["https://www.chandleryardpros.com/images/CYPLOGO.png"],
+  },
 };
 
 export default function ThankYouPage() {
