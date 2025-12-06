@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import { useRouter } from "next/navigation";
 import { services } from "@/lib/services";
 import "./ContactForm.css";
 
@@ -13,6 +14,7 @@ export default function ContactForm({
   compact = false,
   title,
 }: ContactFormProps) {
+  const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{
     type: "success" | "error" | null;
@@ -43,12 +45,10 @@ export default function ContactForm({
       const data = await response.json();
 
       if (data.success) {
-        setSubmitStatus({
-          type: "success",
-          message:
-            "Thank you! Your request has been submitted. We'll connect you with a contractor soon.",
-        });
-        form.reset();
+        // Redirect to thank you page after a brief delay
+        setTimeout(() => {
+          router.push("/thank-you");
+        }, 500);
       } else {
         setSubmitStatus({
           type: "error",
