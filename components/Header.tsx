@@ -63,10 +63,18 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Dropdown title="Services" items={serviceItems} />
+              <Dropdown
+                title="Services"
+                items={serviceItems}
+                onItemClick={closeMobileMenu}
+              />
             </li>
             <li>
-              <Dropdown title="Service Areas" items={serviceAreaItems} />
+              <Dropdown
+                title="Service Areas"
+                items={serviceAreaItems}
+                onItemClick={closeMobileMenu}
+              />
             </li>
             <li>
               <Link href="/blog" onClick={closeMobileMenu}>

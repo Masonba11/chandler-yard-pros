@@ -7,9 +7,14 @@ import "./Dropdown.css";
 interface DropdownProps {
   title: string;
   items: { name: string; href: string }[];
+  onItemClick?: () => void;
 }
 
-export default function Dropdown({ title, items }: DropdownProps) {
+export default function Dropdown({
+  title,
+  items,
+  onItemClick,
+}: DropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -46,7 +51,10 @@ export default function Dropdown({ title, items }: DropdownProps) {
               key={item.href}
               href={item.href}
               className="dropdown-item"
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                setIsOpen(false);
+                onItemClick?.();
+              }}
             >
               {item.name}
             </Link>
