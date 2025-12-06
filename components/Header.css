@@ -29,9 +29,9 @@
 
 .logo-image {
   height: auto;
-  max-height: 70px;
+  max-height: 100px;
   width: auto;
-  max-width: 280px;
+  max-width: 400px;
   object-fit: contain;
 }
 
@@ -122,8 +122,8 @@
   }
 
   .logo-image {
-    max-height: 60px;
-    max-width: 220px;
+    max-height: 70px;
+    max-width: 280px;
   }
 
   .mobile-menu-toggle {
