@@ -7,6 +7,12 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
