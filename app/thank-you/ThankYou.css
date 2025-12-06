@@ -37,13 +37,14 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  padding: 4rem 0;
+  padding: 5rem 0;
   background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.5) 0%,
-    rgba(0, 0, 0, 0.4) 50%,
-    rgba(0, 0, 0, 0.5) 100%
+    135deg,
+    rgba(0, 200, 83, 0.85) 0%,
+    rgba(0, 150, 36, 0.85) 50%,
+    rgba(0, 100, 20, 0.75) 100%
   );
+  backdrop-filter: blur(2px);
 }
 
 .thank-you-page .page-header h1 {
@@ -71,18 +72,30 @@
 }
 
 .success-icon {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  background-color: var(--primary-green);
+  background: var(--gradient-primary);
   color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   margin: 0 auto 2rem;
-  animation: scaleIn 0.5s ease;
+  animation: scaleIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-green);
+  position: relative;
+}
+
+.success-icon::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 3px solid var(--primary-green);
+  opacity: 0.3;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes scaleIn {
@@ -97,9 +110,13 @@
 }
 
 .thank-you-card h2 {
-  color: var(--primary-green);
-  font-size: 2rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
+  font-weight: 800;
 }
 
 .thank-you-message {
@@ -130,10 +147,12 @@
 }
 
 .contact-info-box {
-  background-color: var(--light-gray);
-  padding: 1.5rem;
-  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(0, 200, 83, 0.1) 0%, rgba(0, 150, 36, 0.05) 100%);
+  padding: 2rem;
+  border-radius: 16px;
   margin: 2rem 0;
+  border: 2px solid rgba(0, 200, 83, 0.2);
+  box-shadow: var(--shadow-md);
 }
 
 .contact-info-box p {
