@@ -10,12 +10,32 @@ export const metadata: Metadata = {
     "Connect with trusted local contractors for landscaping, artificial turf, pavers, irrigation, and more in Chandler, Arizona.",
   keywords:
     "landscaping chandler az, chandler yard services, lawn care chandler, landscape design chandler",
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
   openGraph: {
     title: "Chandler Yard Pros | Professional Landscaping Services",
     description:
       "Connect with trusted local contractors for landscaping services in Chandler, Arizona.",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/images/CYPLOGO.png",
+        width: 1200,
+        height: 630,
+        alt: "Chandler Yard Pros Logo",
+      },
+    ],
+    siteName: "Chandler Yard Pros",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Chandler Yard Pros | Professional Landscaping Services",
+    description:
+      "Connect with trusted local contractors for landscaping services in Chandler, Arizona.",
+    images: ["/images/CYPLOGO.png"],
   },
 };
 
