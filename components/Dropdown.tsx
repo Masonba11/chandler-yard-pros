@@ -10,11 +10,7 @@ interface DropdownProps {
   onItemClick?: () => void;
 }
 
-export default function Dropdown({
-  title,
-  items,
-  onItemClick,
-}: DropdownProps) {
+export default function Dropdown({ title, items, onItemClick }: DropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 

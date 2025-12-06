@@ -42,9 +42,16 @@
 }
 
 .blog-post-page .page-header h1 {
-  color: var(--white);
+  color: var(--white) !important;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  -webkit-text-fill-color: var(--white) !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .blog-post-page .hero-cta {
@@ -155,7 +162,28 @@
   }
 
   .blog-post-page .page-header-overlay {
-    padding: 3rem 0;
+    padding: 2rem 0;
+  }
+
+  .blog-post-page .page-header-overlay .container {
+    padding: 1rem;
+  }
+
+  .blog-post-page .page-header h1 {
+    font-size: 1.75rem !important;
+    line-height: 1.3;
+    padding: 0 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .blog-post-page .hero-cta {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .blog-post-page .hero-cta .btn {
+    width: 100%;
   }
 
   .blog-post-page .hero-videos {
