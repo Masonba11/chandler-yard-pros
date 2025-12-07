@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: "/apple-icon.png",
   },
+  verification: {
+    google: "PASTE_CODE_HERE",
+  },
   openGraph: {
     title: "Chandler Yard Pros | Professional Landscaping Services",
     description:
@@ -48,6 +51,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="PASTE_CODE_HERE" />
+      </head>
       <body>
         <Header />
         <main>{children}</main>
