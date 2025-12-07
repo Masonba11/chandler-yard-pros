@@ -7,7 +7,11 @@ import PartnerSection from "@/components/PartnerSection";
 import { services } from "@/lib/services";
 import { serviceContent } from "@/lib/serviceContent";
 import { serviceImages } from "@/lib/serviceImages";
-import { generateBreadcrumbSchema, generateServiceSchema } from "@/lib/schema";
+import {
+  generateBreadcrumbSchema,
+  generateServiceSchema,
+  generateFAQPageSchema,
+} from "@/lib/schema";
 import Script from "next/script";
 import "../ServicePage.css";
 
@@ -78,6 +82,7 @@ export default function ServicePage({ params }: ServicePageProps) {
   ]);
 
   const serviceSchema = generateServiceSchema(content.name);
+  const faqSchema = generateFAQPageSchema(content.faqs);
 
   const otherServices = services.filter((s) => s.slug !== params.slug);
   const serviceImage = serviceImages[params.slug];
@@ -93,6 +98,11 @@ export default function ServicePage({ params }: ServicePageProps) {
         id="service-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <div className="service-page">
