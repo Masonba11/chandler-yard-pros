@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords:
     "landscaping chandler az, chandler yard services, lawn care chandler, landscape design chandler",
   icons: {
-    icon: "/icon.png",
+    icon: "/favicon.ico",
     apple: "/apple-icon.png",
   },
   openGraph: {
